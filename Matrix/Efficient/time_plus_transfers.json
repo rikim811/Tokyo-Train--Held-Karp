@@ -1,0 +1,200 @@
+{
+  "stations": [
+    "Iidabashi",
+    "Tokyo",
+    "Shibuya",
+    "Akihabara",
+    "Asakusa",
+    "Ueno",
+    "Ikebukuro",
+    "Roppongi",
+    "Ginza",
+    "Shinjuku",
+    "Akabanebashi"
+  ],
+  "mode": "efficient",
+  "metric": "chosen per-pair using yen-per-hour-saved threshold",
+  "V": 900,
+  "rule": "Let A=FC-CC, B=CT-FT. If B<=0 choose cheapest; else if A<=0 keep fastest; else if (A/B)*60>=V choose cheapest.",
+  "switched_pairs_count": 79,
+  "sources": {
+    "FC": "./Matrix/fastest_cost.json",
+    "CC": "./Matrix/cheapest_cost.json",
+    "FT": "./Matrix/fastest_time_plus_transfers.json",
+    "CT": "./Matrix/cheapest_time_plus_transfers.json",
+    "FR": "./Matrix/fastest_transfers.json",
+    "CR": "./Matrix/cheapest_transfers.json"
+  },
+  "date_time": {
+    "fastest_cost": {
+      "date": 20251128,
+      "time": 1200
+    },
+    "cheapest_cost": {
+      "date": 20251128,
+      "time": 1200
+    },
+    "fastest_time_plus_transfers": {
+      "date": 20251128,
+      "time": 1200
+    },
+    "cheapest_time_plus_transfers": {
+      "date": 20251128,
+      "time": 1200
+    },
+    "fastest_transfers": {
+      "date": 20251128,
+      "time": 1200
+    },
+    "cheapest_transfers": {
+      "date": 20251128,
+      "time": 1200
+    }
+  },
+  "field": "time_plus_transfers",
+  "matrix": [
+    [
+      0,
+      14.4,
+      21.4,
+      6.0,
+      19.4,
+      16.4,
+      9.0,
+      31.4,
+      15.4,
+      12.0,
+      28.4
+    ],
+    [
+      11.4,
+      0,
+      22.4,
+      4.0,
+      20.4,
+      5.0,
+      16.0,
+      19.4,
+      2.0,
+      13.0,
+      18.4
+    ],
+    [
+      20.4,
+      21.4,
+      0,
+      26.4,
+      34.0,
+      27.0,
+      10.0,
+      13.4,
+      17.4,
+      4.0,
+      17.4
+    ],
+    [
+      6.0,
+      4.0,
+      26.4,
+      0,
+      16.4,
+      3.0,
+      20.0,
+      24.0,
+      13.0,
+      15.4,
+      23.4
+    ],
+    [
+      27.4,
+      19.4,
+      34.0,
+      15.4,
+      0,
+      5.0,
+      31.4,
+      34.4,
+      17.0,
+      28.8,
+      25.4
+    ],
+    [
+      17.4,
+      5.0,
+      28.0,
+      3.0,
+      6.0,
+      0,
+      16.0,
+      27.0,
+      11.0,
+      22.4,
+      27.4
+    ],
+    [
+      9.0,
+      17.0,
+      9.0,
+      20.0,
+      33.4,
+      17.0,
+      0,
+      27.4,
+      19.0,
+      5.0,
+      31.4
+    ],
+    [
+      29.4,
+      20.4,
+      16.4,
+      23.0,
+      29.4,
+      27.0,
+      27.4,
+      0,
+      10.0,
+      9.0,
+      3.0
+    ],
+    [
+      16.4,
+      2.0,
+      16.0,
+      13.0,
+      18.0,
+      11.0,
+      19.0,
+      10.0,
+      0,
+      19.0,
+      20.4
+    ],
+    [
+      11.0,
+      13.0,
+      3.0,
+      15.4,
+      28.8,
+      22.4,
+      5.0,
+      9.0,
+      19.0,
+      0,
+      13.0
+    ],
+    [
+      32.0,
+      22.4,
+      18.4,
+      27.4,
+      25.4,
+      30.4,
+      31.4,
+      3.0,
+      20.4,
+      13.0,
+      0
+    ]
+  ]
+}

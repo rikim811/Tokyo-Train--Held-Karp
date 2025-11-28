@@ -1,0 +1,200 @@
+{
+  "stations": [
+    "Iidabashi",
+    "Tokyo",
+    "Shibuya",
+    "Akihabara",
+    "Asakusa",
+    "Ueno",
+    "Ikebukuro",
+    "Roppongi",
+    "Ginza",
+    "Shinjuku",
+    "Akabanebashi"
+  ],
+  "mode": "efficient",
+  "metric": "chosen per-pair using yen-per-hour-saved threshold",
+  "V": 900,
+  "rule": "Let A=FC-CC, B=CT-FT. If B<=0 choose cheapest; else if A<=0 keep fastest; else if (A/B)*60>=V choose cheapest.",
+  "switched_pairs_count": 79,
+  "sources": {
+    "FC": "./Matrix/fastest_cost.json",
+    "CC": "./Matrix/cheapest_cost.json",
+    "FT": "./Matrix/fastest_time_plus_transfers.json",
+    "CT": "./Matrix/cheapest_time_plus_transfers.json",
+    "FR": "./Matrix/fastest_transfers.json",
+    "CR": "./Matrix/cheapest_transfers.json"
+  },
+  "date_time": {
+    "fastest_cost": {
+      "date": 20251128,
+      "time": 1200
+    },
+    "cheapest_cost": {
+      "date": 20251128,
+      "time": 1200
+    },
+    "fastest_time_plus_transfers": {
+      "date": 20251128,
+      "time": 1200
+    },
+    "cheapest_time_plus_transfers": {
+      "date": 20251128,
+      "time": 1200
+    },
+    "fastest_transfers": {
+      "date": 20251128,
+      "time": 1200
+    },
+    "cheapest_transfers": {
+      "date": 20251128,
+      "time": 1200
+    }
+  },
+  "field": "cost_yen",
+  "matrix": [
+    [
+      0,
+      170,
+      180,
+      150,
+      350,
+      170,
+      180,
+      210,
+      180,
+      170,
+      290
+    ],
+    [
+      170,
+      0,
+      210,
+      150,
+      330,
+      170,
+      210,
+      180,
+      180,
+      210,
+      350
+    ],
+    [
+      180,
+      210,
+      0,
+      210,
+      260,
+      210,
+      180,
+      290,
+      210,
+      170,
+      290
+    ],
+    [
+      150,
+      150,
+      210,
+      0,
+      180,
+      150,
+      210,
+      210,
+      180,
+      180,
+      350
+    ],
+    [
+      210,
+      350,
+      260,
+      180,
+      0,
+      180,
+      360,
+      210,
+      210,
+      360,
+      220
+    ],
+    [
+      170,
+      170,
+      210,
+      150,
+      180,
+      0,
+      180,
+      210,
+      180,
+      210,
+      360
+    ],
+    [
+      180,
+      210,
+      180,
+      210,
+      360,
+      180,
+      0,
+      350,
+      210,
+      170,
+      390
+    ],
+    [
+      210,
+      180,
+      290,
+      210,
+      290,
+      210,
+      390,
+      0,
+      180,
+      220,
+      180
+    ],
+    [
+      180,
+      180,
+      210,
+      180,
+      210,
+      180,
+      210,
+      180,
+      0,
+      210,
+      360
+    ],
+    [
+      170,
+      210,
+      170,
+      180,
+      360,
+      210,
+      170,
+      220,
+      210,
+      0,
+      220
+    ],
+    [
+      280,
+      350,
+      290,
+      350,
+      220,
+      360,
+      390,
+      180,
+      360,
+      220,
+      0
+    ]
+  ]
+}
