@@ -151,7 +151,3 @@ Total transfers (R): 2
 
 PRs and issues welcome. If you change JSON formats, update the loader helpers in `heldKarp_algorithm.py` and `heldKarp_algorithm_onefile.py`.
 
-## License
-
-This repository does not include a license file; add one (for example MIT) if you intend to publish or share broadly.
-
