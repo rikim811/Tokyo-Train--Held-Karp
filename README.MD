@@ -155,12 +155,3 @@ PRs and issues welcome. If you change JSON formats, update the loader helpers in
 
 This repository does not include a license file; add one (for example MIT) if you intend to publish or share broadly.
 
----
-
-If you'd like, I can also:
-- add a minimal `requirements.txt`;
-- add CLI argument parsing to `heldKarp_algorithm.py` so you can pass `--W`, `--T`, `--start`, `--k` from the command line;
-- or add a unit test that verifies the DP on a small synthetic matrix.
-
-Tell me which follow-up you'd like and I'll implement it next.
-
